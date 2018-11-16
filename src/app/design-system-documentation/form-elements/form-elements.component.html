@@ -1,0 +1,200 @@
+<section class="block-element">
+  <div class="sect-title">Form Input Fields</div>
+  <div class="pg-x2">
+    <div class="x2-item">
+      <input type="text" placeholder="Enter some text">
+      <input type="text" placeholder="Enter some text" disabled>
+      <input type="text" value="Read only value" readonly>
+    </div>
+
+    <div class="x2-item">
+      <!-- <pre>
+        <code class="html">{{inputfields1}}</code> 
+      </pre> -->
+      <ul class="tab-menus">
+        <li [class.active-tab]="ishtml" (click)="htmltab()">HTML</li>  
+        <li [class.active-tab]="iscss" (click)="csstab()">CSS</li> 
+        <li [class.active-tab]="ists" (click)="tstab()">TS</li>
+      </ul>
+    
+      <div class="tab-contents">
+        <pre *ngIf="ishtml">
+          <code class="html">{{inputfields3}}</code> 
+        </pre>
+  
+        <pre *ngIf="iscss">
+          <code class="css"></code>
+        </pre>
+  
+        <pre *ngIf="ists">
+          <code class="ts"></code>
+        </pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="pg-x2">
+    <div class="x2-item">
+      <input class="input-invalid" type="text" placeholder="Enter some text">
+      <input class="input-valid" type="text" placeholder="Enter some text">
+      <div class="form-group">
+        <input class="input-invalid" type="text" placeholder="Enter some text">
+        <div class="notification input-error">You have a big buggy bug here!!!</div>
+      </div>
+    </div>
+
+    <div class="x2-item">
+      <!-- <pre>
+        <code class="html">{{inputfields2}}</code> 
+      </pre> -->
+      <ul class="tab-menus">
+        <li [class.active-tab]="ishtml2" (click)="htmltab2()">HTML</li> 
+        <li [class.active-tab]="iscss2" (click)="csstab2()">CSS</li> 
+        <li [class.active-tab]="ists2" (click)="tstab2()">TS</li>
+      </ul>
+    
+      <div class="tab-contents">
+        <pre *ngIf="ishtml2">
+          <code class="html">{{inputfields2}}</code> 
+        </pre>
+  
+        <pre *ngIf="iscss2">
+          <code class="css"></code>
+        </pre>
+  
+        <pre *ngIf="ists2">
+          <code class="ts"></code>
+        </pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="pg-x2">
+    <div class="x2-item">
+      <div class="search-wrap">
+        <input type="search" placeholder="Type your search">
+      </div>
+      <input type="password">
+      <textarea></textarea> 
+    </div>
+
+    <div class="x2-item">
+      <!-- <pre>
+        <code class="html">{{inputfields3}}</code> 
+      </pre> -->
+      <ul class="tab-menus">
+        <li [class.active-tab]="ishtml3" (click)="htmltab3()">HTML</li> 
+        <li [class.active-tab]="iscss3" (click)="csstab3()">CSS</li> 
+        <li [class.active-tab]="ists3" (click)="tstab3()">TS</li>
+      </ul>
+    
+      <div class="tab-contents">
+        <pre *ngIf="ishtml3">
+          <code class="html">{{inputfields3}}</code> 
+        </pre>
+  
+        <pre *ngIf="iscss3">
+          <code class="css"></code>
+        </pre>
+  
+        <pre *ngIf="ists3">
+          <code class="ts"></code>
+        </pre>
+      </div>
+    </div>
+  </div> 
+
+  <div class="pg-x2">
+    <div class="x2-item">
+      <div class="checkbox">
+          <input type="checkbox" id="item1" name="item1" value="">
+          <label for="item1">Option</label>
+      </div>
+      <div class="checkbox">
+        <input disabled type="checkbox" id="item2" name="item2" value="">
+        <label for="item2">Option2</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="item3" name="item3" value="">
+        <label for="item3">Option3</label>
+      </div>
+    </div>
+
+    <div class="x2-item">
+      <ul class="tab-menus">
+        <li [class.active-tab]="ishtml4" (click)="htmltab4()">HTML</li> 
+        <li [class.active-tab]="iscss4" (click)="csstab4()">CSS</li> 
+        <li [class.active-tab]="ists4" (click)="tstab4()">TS</li>
+      </ul>
+    
+      <div class="tab-contents">
+        <pre *ngIf="ishtml4">
+          <code class="html">{{inputfields4}}</code> 
+        </pre>
+  
+        <pre *ngIf="iscss4">
+          <code class="css"></code>
+        </pre>
+   
+        <pre *ngIf="ists4">
+          <code class="ts"></code>
+        </pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="pg-x2">
+    <div class="x2-item">
+      <div class="radio">
+          <input type="radio" id="radio1" name="radio" value="">
+          <label for="radio1">Option</label>
+      </div>
+      <div class="radio">
+        <input disabled type="radio" id="radio2" name="radio" value="">
+        <label for="radio2">Option2</label>
+      </div>
+      <div class="radio"> 
+        <input type="radio" id="radio3" name="radio" value="">
+        <label for="radio3">Option3</label>
+      </div>
+    </div>
+
+    <div class="x2-item">
+      <ul class="tab-menus">
+        <li [class.active-tab]="ishtml5" (click)="htmltab5()">HTML</li> 
+        <li [class.active-tab]="iscss5" (click)="csstab5()">CSS</li> 
+        <li [class.active-tab]="ists5" (click)="tstab5()">TS</li>
+      </ul>
+    
+      <div class="tab-contents">
+        <pre *ngIf="ishtml4">
+          <code class="html">{{inputfields4}}</code> 
+        </pre>
+  
+        <pre *ngIf="iscss4">
+          <code class="css"></code>
+        </pre>
+   
+        <pre *ngIf="ists4">
+          <code class="ts"></code>
+        </pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="pg-x2">
+    <div class="x2-item">
+      <select>
+        <option>option 1</option>
+        <option>option 1</option>
+        <option>option 1</option>
+      </select>
+    </div>
+
+    <div class="x2-item">
+      <pre> 
+        <code class="html"></code> 
+      </pre>
+    </div>
+  </div>
+</section> 
